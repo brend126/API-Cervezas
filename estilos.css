@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.tabla-general {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-general th, .tabla-general td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  background-color: #f8f9fa;
+  color: #212529;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.tabla-general th {
+  background-color: #343a40;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Ajustes específicos para la columna de "Nombre" */
+.tabla-general td.nombre {
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 150px;
+}
+
+/* Mueve el texto de "Precio" y "Opiniones" un poco a la derecha */
+.tabla-general td.precio, .tabla-general td.opiniones {
+  padding-left: 150px; /* Añade margen interno para mover el contenido a la derecha */
+}
+
+.tabla-general tr:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+.tabla-general tr:hover {
+  background-color: #e9ecef;
+}
+
+.tabla-general img {
+  border-radius: 4px;
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.tabla-general th.imagen {
+  padding-left: 110px; /* Ajusta este valor según lo necesites */
+  text-align: left;   /* Asegura que el texto esté alineado a la izquierda */
+}
